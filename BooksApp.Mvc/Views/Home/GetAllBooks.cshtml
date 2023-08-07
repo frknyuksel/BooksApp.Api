@@ -1,0 +1,13 @@
+﻿@model List<BookViewModel>
+<h1 class="display-6">Kitaplar</h1>
+<hr />
+@foreach(var book in Model){
+    <div>
+        <a 
+            asp-area="" 
+            asp-controller="Home" 
+            asp-action="GetBookById" 
+            asp-route-id="@book.Id"
+        >@book.Name</a>
+    </div>
+}

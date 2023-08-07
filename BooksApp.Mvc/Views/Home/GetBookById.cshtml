@@ -1,0 +1,26 @@
+﻿@model BookViewModel
+<div class="row">
+    <div class="col-3">
+        <img src="http://localhost:5201/images/books/@Model.ImageUrl" />
+    </div>
+    <div class="col-9">
+        <div class="row">
+            <div class="col-12">
+                <span class="text-danger">Kitap:</span>
+                <p>@Model.Name</p>
+            </div>
+            <div class="col-12">
+                <span class="text-danger">Yazar:</span>
+                <p>@Model.Author.FirstName @Model.Author.LastName</p>
+            </div>
+            <div class="col-12">
+                <span class="text-danger">Yayınevi:</span>
+                <p>@Model.Publisher.Name</p>
+            </div>
+            <div class="col-12">
+                <span class="text-danger">Basım Yılı:</span>
+                <p>@Model.EditionYear</p>
+            </div>
+        </div>
+    </div>
+</div>
